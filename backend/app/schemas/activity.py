@@ -1,9 +1,9 @@
-import uuid
+﻿import uuid
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 from pydantic import BaseModel
-from backend.app.models.activity import ActivityType, NotificationType
-from backend.app.schemas.user import UserResponse
+from app.models.activity import ActivityType, NotificationType
+from app.schemas.user import UserResponse
 
 
 class ActivityResponse(BaseModel):

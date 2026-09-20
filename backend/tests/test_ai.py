@@ -1,7 +1,7 @@
-import json
+﻿import json
 import pytest
-from backend.app.ai.provider import CodeOrbitEngine
-from backend.app.ai.rag import CodeChunker
+from app.ai.provider import CodeOrbitEngine
+from app.ai.rag import CodeChunker
 
 
 @pytest.mark.asyncio

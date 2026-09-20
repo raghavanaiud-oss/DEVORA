@@ -1,11 +1,11 @@
-import asyncio
+﻿import asyncio
 import json
 import logging
 from collections import defaultdict
 from typing import Any, Dict, List, Optional, Set
 from fastapi import WebSocket
-from backend.app.core.redis import pubsub_manager
-from backend.app.websocket.presence import UserPresence, get_user_color
+from app.core.redis import pubsub_manager
+from app.websocket.presence import UserPresence, get_user_color
 
 logger = logging.getLogger("codeorbit.websocket")
 

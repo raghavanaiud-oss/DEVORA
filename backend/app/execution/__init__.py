@@ -1,10 +1,10 @@
-from backend.app.execution.runner import (
+﻿from app.execution.runner import (
     ExecutionManager,
     ExecutionResultData,
     ExecutionSandboxInterface,
     execution_manager,
 )
-from backend.app.execution.runtimes import RuntimeConfig, detect_runtime
+from app.execution.runtimes import RuntimeConfig, detect_runtime
 
 __all__ = [
     "ExecutionManager",

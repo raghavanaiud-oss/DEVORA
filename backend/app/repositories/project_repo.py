@@ -1,10 +1,10 @@
-import uuid
+﻿import uuid
 from typing import List, Optional, Tuple
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
-from backend.app.models.invitation import Invitation, InvitationStatus
-from backend.app.models.project import Project, ProjectMember, ProjectRole
+from app.models.invitation import Invitation, InvitationStatus
+from app.models.project import Project, ProjectMember, ProjectRole
 
 
 class ProjectRepository:

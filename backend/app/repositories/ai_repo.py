@@ -1,9 +1,9 @@
-import uuid
+﻿import uuid
 from typing import Any, Dict, List, Optional, Tuple
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
-from backend.app.models.ai import (
+from app.models.ai import (
     AIRequest,
     AIReview,
     AIReviewItem,

@@ -1,12 +1,12 @@
-import uuid
+﻿import uuid
 from typing import Any, Dict, List, Optional
 from sqlalchemy import distinct, func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
-from backend.app.models.activity import ActivityEvent, ActivityType, Notification
-from backend.app.models.ai import AIReview, AIReviewItem
-from backend.app.models.execution import ExecutionJob, ExecutionResult, ExecutionStatus
-from backend.app.models.workspace_file import FileVersion, WorkspaceFile
+from app.models.activity import ActivityEvent, ActivityType, Notification
+from app.models.ai import AIReview, AIReviewItem
+from app.models.execution import ExecutionJob, ExecutionResult, ExecutionStatus
+from app.models.workspace_file import FileVersion, WorkspaceFile
 
 
 class ActivityRepository:

@@ -1,15 +1,15 @@
-import os
+﻿import os
 import posixpath
 import uuid
 from typing import Dict, List, Optional
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.models.activity import ActivityEvent, ActivityType
-from backend.app.models.workspace_file import WorkspaceFile
-from backend.app.repositories.activity_repo import ActivityRepository
-from backend.app.repositories.file_repo import FileRepository
-from backend.app.schemas.file import (
+from app.models.activity import ActivityEvent, ActivityType
+from app.models.workspace_file import WorkspaceFile
+from app.repositories.activity_repo import ActivityRepository
+from app.repositories.file_repo import FileRepository
+from app.schemas.file import (
     FileCreate,
     FileMove,
     FileRename,

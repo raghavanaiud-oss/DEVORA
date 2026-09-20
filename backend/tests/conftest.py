@@ -1,14 +1,14 @@
-import uuid
+﻿import uuid
 from typing import AsyncGenerator
 import pytest
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient
 
-from backend.app.api.deps import get_current_active_user, get_current_user, get_db
-from backend.app.core.security import create_access_token
-from backend.app.main import app
-from backend.app.models.project import Project, ProjectMember, ProjectRole, ProjectVisibility
-from backend.app.models.user import User
+from app.api.deps import get_current_active_user, get_current_user, get_db
+from app.core.security import create_access_token
+from app.main import app
+from app.models.project import Project, ProjectMember, ProjectRole, ProjectVisibility
+from app.models.user import User
 
 
 @pytest.fixture

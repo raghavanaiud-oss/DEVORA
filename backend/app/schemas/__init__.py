@@ -1,4 +1,4 @@
-from backend.app.schemas.user import (
+﻿from app.schemas.user import (
     UserBase,
     UserCreate,
     UserLogin,
@@ -8,7 +8,7 @@ from backend.app.schemas.user import (
     RefreshTokenRequest,
     TokenPayload,
 )
-from backend.app.schemas.project import (
+from app.schemas.project import (
     ProjectBase,
     ProjectCreate,
     ProjectUpdate,
@@ -17,7 +17,7 @@ from backend.app.schemas.project import (
     AddMemberRequest,
     UpdateMemberRoleRequest,
 )
-from backend.app.schemas.file import (
+from app.schemas.file import (
     FileCreate,
     FileUpdate,
     FileRename,
@@ -26,12 +26,12 @@ from backend.app.schemas.file import (
     FileResponse,
     FileTreeItem,
 )
-from backend.app.schemas.execution import (
+from app.schemas.execution import (
     ExecutionJobCreate,
     ExecutionJobResponse,
     ExecutionResultResponse,
 )
-from backend.app.schemas.ai import (
+from app.schemas.ai import (
     CodeExplainRequest,
     CodeReviewCreate,
     AIReviewResponse,
@@ -43,12 +43,12 @@ from backend.app.schemas.ai import (
     AskProjectResponse,
     SourceFileReference,
 )
-from backend.app.schemas.activity import (
+from app.schemas.activity import (
     ActivityResponse,
     NotificationResponse,
     AnalyticsResponse,
 )
-from backend.app.schemas.invitation import (
+from app.schemas.invitation import (
     InvitationCreate,
     InvitationResponse,
 )

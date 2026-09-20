@@ -1,9 +1,9 @@
-import uuid
+﻿import uuid
 from datetime import datetime
 from typing import List, Optional
 from pydantic import BaseModel, Field
-from backend.app.models.project import ProjectRole, ProjectVisibility
-from backend.app.schemas.user import UserResponse
+from app.models.project import ProjectRole, ProjectVisibility
+from app.schemas.user import UserResponse
 
 
 class ProjectBase(BaseModel):

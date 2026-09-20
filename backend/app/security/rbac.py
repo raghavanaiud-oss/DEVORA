@@ -1,7 +1,7 @@
-import enum
+﻿import enum
 from typing import Dict, Set
 from fastapi import HTTPException, status
-from backend.app.models.project import ProjectRole
+from app.models.project import ProjectRole
 
 
 class Permission(str, enum.Enum):

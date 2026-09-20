@@ -1,24 +1,24 @@
-import json
+﻿import json
 import uuid
 from typing import List, Optional
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.ai.provider import get_llm_provider
-from backend.app.ai.rag import RAGService
-from backend.app.ai.review import CodeReviewService
-from backend.app.ai.test_gen import TestGenerationService
-from backend.app.models.activity import ActivityEvent, ActivityType
-from backend.app.models.ai import (
+from app.ai.provider import get_llm_provider
+from app.ai.rag import RAGService
+from app.ai.review import CodeReviewService
+from app.ai.test_gen import TestGenerationService
+from app.models.activity import ActivityEvent, ActivityType
+from app.models.ai import (
     AIRequest,
     AIRequestType,
     AIReviewItem,
     AIReviewStatus,
 )
-from backend.app.repositories.activity_repo import ActivityRepository
-from backend.app.repositories.ai_repo import AIRepository
-from backend.app.repositories.file_repo import FileRepository
-from backend.app.schemas.ai import (
+from app.repositories.activity_repo import ActivityRepository
+from app.repositories.ai_repo import AIRepository
+from app.repositories.file_repo import FileRepository
+from app.schemas.ai import (
     AIReviewItemResponse,
     AIReviewResponse,
     AskProjectRequest,

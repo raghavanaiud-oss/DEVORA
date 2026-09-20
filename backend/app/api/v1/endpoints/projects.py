@@ -1,18 +1,18 @@
-import uuid
+﻿import uuid
 from typing import List
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_current_active_user, get_db
-from backend.app.models.user import User
-from backend.app.schemas.project import (
+from app.api.deps import get_current_active_user, get_db
+from app.models.user import User
+from app.schemas.project import (
     AddMemberRequest,
     ProjectCreate,
     ProjectMemberResponse,
     ProjectResponse,
     ProjectUpdate,
 )
-from backend.app.services.project_service import ProjectService
+from app.services.project_service import ProjectService
 
 router = APIRouter()
 

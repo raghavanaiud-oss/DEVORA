@@ -1,11 +1,11 @@
-import uuid
+﻿import uuid
 from typing import Dict, List
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_current_active_user, get_db, require_project_permission
-from backend.app.models.user import User
-from backend.app.schemas.ai import (
+from app.api.deps import get_current_active_user, get_db, require_project_permission
+from app.models.user import User
+from app.schemas.ai import (
     AIReviewItemResponse,
     AIReviewResponse,
     AskProjectRequest,
@@ -16,8 +16,8 @@ from backend.app.schemas.ai import (
     TestGenRequest,
     TestGenResponse,
 )
-from backend.app.security.rbac import Permission
-from backend.app.services.ai_service import AIService
+from app.security.rbac import Permission
+from app.services.ai_service import AIService
 
 router = APIRouter()
 

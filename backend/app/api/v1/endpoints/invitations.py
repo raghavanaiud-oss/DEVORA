@@ -1,13 +1,13 @@
-import uuid
+﻿import uuid
 from typing import List
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_current_active_user, get_db, require_project_permission
-from backend.app.models.user import User
-from backend.app.schemas.invitation import InvitationCreate, InvitationResponse
-from backend.app.security.rbac import Permission
-from backend.app.services.invitation_service import InvitationService
+from app.api.deps import get_current_active_user, get_db, require_project_permission
+from app.models.user import User
+from app.schemas.invitation import InvitationCreate, InvitationResponse
+from app.security.rbac import Permission
+from app.services.invitation_service import InvitationService
 
 router = APIRouter()
 

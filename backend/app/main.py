@@ -1,4 +1,4 @@
-import sys
+﻿import sys
 from pathlib import Path
 
 _backend_dir = Path(__file__).resolve().parent.parent
@@ -16,10 +16,10 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from backend.app.api.v1.api import api_router
-from backend.app.core.config import settings
-from backend.app.core.database import Base, engine
-from backend.app.websocket.router import router as websocket_router
+from app.api.v1.api import api_router
+from app.core.config import settings
+from app.core.database import Base, engine
+from app.websocket.router import router as websocket_router
 
 logging.basicConfig(
     level=logging.INFO,

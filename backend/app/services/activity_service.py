@@ -1,10 +1,10 @@
-import uuid
+﻿import uuid
 from typing import List
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.repositories.activity_repo import ActivityRepository
-from backend.app.schemas.activity import ActivityResponse, AnalyticsResponse, NotificationResponse
+from app.repositories.activity_repo import ActivityRepository
+from app.schemas.activity import ActivityResponse, AnalyticsResponse, NotificationResponse
 
 
 class ActivityService:

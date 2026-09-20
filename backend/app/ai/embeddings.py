@@ -1,8 +1,8 @@
-import hashlib
+﻿import hashlib
 import math
 from typing import List
 import httpx
-from backend.app.core.config import settings
+from app.core.config import settings
 
 
 class EmbeddingGenerator:

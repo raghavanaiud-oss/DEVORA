@@ -1,9 +1,9 @@
-import abc
+﻿import abc
 import os
 import re
 from typing import Any, Dict, List, Optional
 import httpx
-from backend.app.core.config import settings
+from app.core.config import settings
 
 
 class LLMProviderInterface(abc.ABC):

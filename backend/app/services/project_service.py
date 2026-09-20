@@ -1,26 +1,26 @@
-import re
+﻿import re
 import secrets
 import uuid
 from datetime import datetime, timedelta, timezone
 from typing import List, Optional
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
-from backend.app.models.activity import ActivityEvent, ActivityType
-from backend.app.models.invitation import Invitation, InvitationStatus
-from backend.app.models.project import Project, ProjectMember, ProjectRole, ProjectVisibility
-from backend.app.models.workspace_file import WorkspaceFile
-from backend.app.repositories.activity_repo import ActivityRepository
-from backend.app.repositories.file_repo import FileRepository
-from backend.app.repositories.project_repo import ProjectRepository
-from backend.app.repositories.user_repo import UserRepository
-from backend.app.schemas.project import (
+from app.models.activity import ActivityEvent, ActivityType
+from app.models.invitation import Invitation, InvitationStatus
+from app.models.project import Project, ProjectMember, ProjectRole, ProjectVisibility
+from app.models.workspace_file import WorkspaceFile
+from app.repositories.activity_repo import ActivityRepository
+from app.repositories.file_repo import FileRepository
+from app.repositories.project_repo import ProjectRepository
+from app.repositories.user_repo import UserRepository
+from app.schemas.project import (
     AddMemberRequest,
     ProjectCreate,
     ProjectMemberResponse,
     ProjectResponse,
     ProjectUpdate,
 )
-from backend.app.security.rbac import Permission, enforce_permission
+from app.security.rbac import Permission, enforce_permission
 
 
 class ProjectService:

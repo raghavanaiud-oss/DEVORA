@@ -1,14 +1,14 @@
-import asyncio
+﻿import asyncio
 import os
 import shutil
 import tempfile
 import time
 from typing import Dict, Optional
-from backend.app.core.config import settings
-from backend.app.execution.process_adapter import ProcessExecutionAdapter
-from backend.app.execution.runner import ExecutionResultData, ExecutionSandboxInterface
-from backend.app.execution.runtimes import RuntimeConfig
-from backend.app.models.execution import ExecutionStatus
+from app.core.config import settings
+from app.execution.process_adapter import ProcessExecutionAdapter
+from app.execution.runner import ExecutionResultData, ExecutionSandboxInterface
+from app.execution.runtimes import RuntimeConfig
+from app.models.execution import ExecutionStatus
 
 
 class DockerExecutionAdapter(ExecutionSandboxInterface):

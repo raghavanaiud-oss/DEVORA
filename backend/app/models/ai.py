@@ -1,10 +1,10 @@
-import enum
+﻿import enum
 import uuid
 from datetime import datetime, timezone
 from sqlalchemy import Column, DateTime, Enum, ForeignKey, Index, Integer, String, Text
 from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import relationship
-from backend.app.core.database import Base
+from app.core.database import Base
 
 try:
     from pgvector.sqlalchemy import Vector

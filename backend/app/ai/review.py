@@ -1,18 +1,18 @@
-import json
+﻿import json
 import re
 import uuid
 from typing import Dict, List, Optional
 from sqlalchemy.ext.asyncio import AsyncSession
-from backend.app.ai.provider import get_llm_provider
-from backend.app.models.ai import (
+from app.ai.provider import get_llm_provider
+from app.models.ai import (
     AIReview,
     AIReviewCategory,
     AIReviewItem,
     AIReviewSeverity,
     AIReviewStatus,
 )
-from backend.app.models.workspace_file import WorkspaceFile
-from backend.app.repositories.ai_repo import AIRepository
+from app.models.workspace_file import WorkspaceFile
+from app.repositories.ai_repo import AIRepository
 
 
 class CodeReviewService:

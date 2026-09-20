@@ -1,8 +1,8 @@
-import uuid
+﻿import uuid
 from datetime import datetime
 from pydantic import BaseModel, EmailStr
-from backend.app.models.invitation import InvitationStatus
-from backend.app.models.project import ProjectRole
+from app.models.invitation import InvitationStatus
+from app.models.project import ProjectRole
 
 
 class InvitationCreate(BaseModel):

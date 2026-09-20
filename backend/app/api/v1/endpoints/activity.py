@@ -1,13 +1,13 @@
-import uuid
+﻿import uuid
 from typing import List
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_current_active_user, get_db, require_project_permission
-from backend.app.models.user import User
-from backend.app.schemas.activity import ActivityResponse, AnalyticsResponse, NotificationResponse
-from backend.app.security.rbac import Permission
-from backend.app.services.activity_service import ActivityService
+from app.api.deps import get_current_active_user, get_db, require_project_permission
+from app.models.user import User
+from app.schemas.activity import ActivityResponse, AnalyticsResponse, NotificationResponse
+from app.security.rbac import Permission
+from app.services.activity_service import ActivityService
 
 router = APIRouter()
 

@@ -1,10 +1,10 @@
-import abc
+﻿import abc
 import time
 from dataclasses import dataclass
 from typing import Dict, Optional
-from backend.app.core.config import settings
-from backend.app.execution.runtimes import RuntimeConfig, detect_runtime
-from backend.app.models.execution import ExecutionStatus
+from app.core.config import settings
+from app.execution.runtimes import RuntimeConfig, detect_runtime
+from app.models.execution import ExecutionStatus
 
 
 @dataclass
@@ -40,12 +40,12 @@ class ExecutionManager:
     def get_adapter(self) -> ExecutionSandboxInterface:
         if settings.EXECUTION_SANDBOX_TYPE == "docker":
             if self._docker_adapter is None:
-                from backend.app.execution.docker_adapter import DockerExecutionAdapter
+                from app.execution.docker_adapter import DockerExecutionAdapter
                 self._docker_adapter = DockerExecutionAdapter()
             return self._docker_adapter
         else:
             if self._process_adapter is None:
-                from backend.app.execution.process_adapter import ProcessExecutionAdapter
+                from app.execution.process_adapter import ProcessExecutionAdapter
                 self._process_adapter = ProcessExecutionAdapter()
             return self._process_adapter
 

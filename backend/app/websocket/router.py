@@ -1,11 +1,11 @@
-import json
+﻿import json
 import logging
 import uuid
 from typing import Optional
 from fastapi import APIRouter, Query, WebSocket, WebSocketDisconnect
 
-from backend.app.core.security import decode_token
-from backend.app.websocket.connection_manager import connection_manager
+from app.core.security import decode_token
+from app.websocket.connection_manager import connection_manager
 
 logger = logging.getLogger("codeorbit.websocket")
 

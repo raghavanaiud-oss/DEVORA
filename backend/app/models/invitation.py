@@ -1,11 +1,11 @@
-import enum
+﻿import enum
 import uuid
 from datetime import datetime, timezone
 from sqlalchemy import Column, DateTime, Enum, ForeignKey, Index, String
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
-from backend.app.core.database import Base
-from backend.app.models.project import ProjectRole
+from app.core.database import Base
+from app.models.project import ProjectRole
 
 
 def utc_now():

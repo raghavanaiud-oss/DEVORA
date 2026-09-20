@@ -1,9 +1,9 @@
-from fastapi import APIRouter, Depends, status
+﻿from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_current_active_user, get_db
-from backend.app.models.user import User
-from backend.app.schemas.user import (
+from app.api.deps import get_current_active_user, get_db
+from app.models.user import User
+from app.schemas.user import (
     RefreshTokenRequest,
     TokenResponse,
     UserCreate,
@@ -11,7 +11,7 @@ from backend.app.schemas.user import (
     UserResponse,
     UserUpdate,
 )
-from backend.app.services.auth_service import AuthService
+from app.services.auth_service import AuthService
 
 router = APIRouter()
 

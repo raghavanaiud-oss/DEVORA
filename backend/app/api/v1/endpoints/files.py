@@ -1,11 +1,11 @@
-import uuid
+﻿import uuid
 from typing import List
 from fastapi import APIRouter, Depends, Query, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_current_active_user, get_db, require_project_permission
-from backend.app.models.user import User
-from backend.app.schemas.file import (
+from app.api.deps import get_current_active_user, get_db, require_project_permission
+from app.models.user import User
+from app.schemas.file import (
     FileCreate,
     FileMove,
     FileRename,
@@ -14,8 +14,8 @@ from backend.app.schemas.file import (
     FileUpdate,
     FileVersionResponse,
 )
-from backend.app.security.rbac import Permission
-from backend.app.services.file_service import FileService
+from app.security.rbac import Permission
+from app.services.file_service import FileService
 
 router = APIRouter()
 

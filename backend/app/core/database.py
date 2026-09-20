@@ -1,7 +1,7 @@
-from typing import AsyncGenerator
+﻿from typing import AsyncGenerator
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from sqlalchemy.orm import declarative_base
-from backend.app.core.config import settings
+from app.core.config import settings
 
 # Normalize database URL for asyncpg
 db_url = settings.DATABASE_URL

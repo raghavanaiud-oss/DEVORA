@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, timezone
+﻿from datetime import datetime, timedelta, timezone
 import secrets
 import uuid
 from typing import List
@@ -6,14 +6,14 @@ from fastapi import HTTPException, status
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.models.activity import ActivityEvent, ActivityType, Notification, NotificationType
-from backend.app.models.invitation import Invitation, InvitationStatus
-from backend.app.models.project import ProjectRole
-from backend.app.repositories.activity_repo import ActivityRepository
-from backend.app.repositories.project_repo import ProjectRepository
-from backend.app.repositories.user_repo import UserRepository
-from backend.app.schemas.invitation import InvitationCreate, InvitationResponse
-from backend.app.security.rbac import Permission, enforce_permission
+from app.models.activity import ActivityEvent, ActivityType, Notification, NotificationType
+from app.models.invitation import Invitation, InvitationStatus
+from app.models.project import ProjectRole
+from app.repositories.activity_repo import ActivityRepository
+from app.repositories.project_repo import ProjectRepository
+from app.repositories.user_repo import UserRepository
+from app.schemas.invitation import InvitationCreate, InvitationResponse
+from app.security.rbac import Permission, enforce_permission
 
 
 def utc_now() -> datetime:

@@ -1,4 +1,4 @@
-from backend.app.services.file_service import detect_language, normalize_path
+﻿from app.services.file_service import detect_language, normalize_path
 
 
 def test_detect_language():

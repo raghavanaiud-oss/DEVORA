@@ -1,11 +1,11 @@
-import re
+﻿import re
 import uuid
 from typing import Any, Dict, List, Tuple
 from sqlalchemy.ext.asyncio import AsyncSession
-from backend.app.ai.embeddings import embedding_generator
-from backend.app.models.ai import Embedding, ProjectDocument
-from backend.app.models.workspace_file import WorkspaceFile
-from backend.app.repositories.ai_repo import AIRepository
+from app.ai.embeddings import embedding_generator
+from app.models.ai import Embedding, ProjectDocument
+from app.models.workspace_file import WorkspaceFile
+from app.repositories.ai_repo import AIRepository
 
 
 class CodeChunker:

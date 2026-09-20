@@ -1,4 +1,4 @@
-from backend.app.execution.runtimes import SUPPORTED_RUNTIMES, detect_runtime
+﻿from app.execution.runtimes import SUPPORTED_RUNTIMES, detect_runtime
 
 
 def test_supported_runtimes():

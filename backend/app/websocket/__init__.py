@@ -1,12 +1,12 @@
-from backend.app.websocket.connection_manager import ConnectionManager, connection_manager
-from backend.app.websocket.presence import (
+﻿from app.websocket.connection_manager import ConnectionManager, connection_manager
+from app.websocket.presence import (
     PRESENCE_COLORS,
     UserCursor,
     UserPresence,
     UserSelection,
     get_user_color,
 )
-from backend.app.websocket.yjs_protocol import (
+from app.websocket.yjs_protocol import (
     MESSAGE_AWARENESS,
     MESSAGE_SYNC,
     MESSAGE_YJS_SYNC_STEP_1,

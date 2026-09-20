@@ -1,17 +1,17 @@
-import uuid
+﻿import uuid
 from datetime import datetime, timezone
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
-from backend.app.core.security import (
+from app.core.security import (
     create_access_token,
     create_refresh_token,
     decode_token,
     get_password_hash,
     verify_password,
 )
-from backend.app.models.user import RefreshToken, User
-from backend.app.repositories.user_repo import UserRepository
-from backend.app.schemas.user import TokenResponse, UserCreate, UserLogin, UserResponse
+from app.models.user import RefreshToken, User
+from app.repositories.user_repo import UserRepository
+from app.schemas.user import TokenResponse, UserCreate, UserLogin, UserResponse
 
 
 class AuthService:

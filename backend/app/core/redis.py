@@ -1,7 +1,7 @@
-import json
+﻿import json
 from typing import Any, Optional
 import redis.asyncio as aioredis
-from backend.app.core.config import settings
+from app.core.config import settings
 
 redis_pool: Optional[aioredis.ConnectionPool] = None
 

@@ -1,9 +1,9 @@
-import hashlib
+﻿import hashlib
 import uuid
 from typing import List, Optional
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
-from backend.app.models.workspace_file import FileVersion, WorkspaceFile
+from app.models.workspace_file import FileVersion, WorkspaceFile
 
 
 class FileRepository:

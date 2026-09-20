@@ -1,8 +1,8 @@
-import uuid
+﻿import uuid
 from datetime import datetime
 from typing import Dict, Optional
 from pydantic import BaseModel, Field
-from backend.app.models.execution import ExecutionStatus
+from app.models.execution import ExecutionStatus
 
 
 class ExecutionJobCreate(BaseModel):

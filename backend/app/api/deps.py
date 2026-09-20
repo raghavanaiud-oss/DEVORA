@@ -1,17 +1,17 @@
-import uuid
+﻿import uuid
 from typing import Callable, Optional
 from fastapi import Depends, HTTPException, Path, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.core.config import settings
-from backend.app.core.database import get_db
-from backend.app.core.security import decode_token
-from backend.app.models.project import ProjectRole, ProjectVisibility
-from backend.app.models.user import User
-from backend.app.repositories.project_repo import ProjectRepository
-from backend.app.repositories.user_repo import UserRepository
-from backend.app.security.rbac import Permission, enforce_permission
+from app.core.config import settings
+from app.core.database import get_db
+from app.core.security import decode_token
+from app.models.project import ProjectRole, ProjectVisibility
+from app.models.user import User
+from app.repositories.project_repo import ProjectRepository
+from app.repositories.user_repo import UserRepository
+from app.security.rbac import Permission, enforce_permission
 
 oauth2_scheme = OAuth2PasswordBearer(
     tokenUrl=f"{settings.API_V1_STR}/auth/login",

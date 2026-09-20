@@ -1,13 +1,13 @@
-import difflib
+﻿import difflib
 import os
 import re
 import uuid
 from typing import List, Optional
 from sqlalchemy.ext.asyncio import AsyncSession
-from backend.app.ai.provider import get_llm_provider
-from backend.app.ai.rag import RAGService
-from backend.app.models.workspace_file import WorkspaceFile
-from backend.app.schemas.ai import TestGenResponse
+from app.ai.provider import get_llm_provider
+from app.ai.rag import RAGService
+from app.models.workspace_file import WorkspaceFile
+from app.schemas.ai import TestGenResponse
 
 
 class TestGenerationService:
