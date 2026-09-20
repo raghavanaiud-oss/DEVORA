@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     # Environment
     ENVIRONMENT: str = "development"
     DEBUG: bool = True
+    PORT: int = 8000
     
     # Security / Auth
     SECRET_KEY: str = "super-secret-codeorbit-jwt-production-grade-key-change-in-prod-2026"
